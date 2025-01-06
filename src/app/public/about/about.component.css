@@ -1,0 +1,67 @@
+/* Animaciones para las secciones */
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Clases de animación */
+  .animate__animated {
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+  }
+  
+  .animate__fadeIn {
+    animation-name: fadeIn;
+  }
+  
+  /* Para la sección hero */
+  .hero {
+    background-color: #002b55;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+  }
+  
+  /* Para las imágenes del equipo */
+  #nuestro-equipo img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  /* Diseño de los valores */
+  #nuestra-historia ul, #mision-vision ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+  }
+  #nuestra-historia li, #mision-vision li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilos generales */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  h2, h3 {
+    color: #002b55;
+    margin-bottom: 20px;
+  }
+  
+  .text-lg {
+    font-size: 1.125rem;
+    line-height: 1.6;
+  }
+  
