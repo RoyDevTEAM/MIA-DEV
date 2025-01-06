@@ -7,24 +7,43 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
-  // Array de miembros del equipo
   teamMembers = [
     {
-      name: 'Roider Millares',
-      role: 'Desarrollador Backend',
-      image: 'assets/images/roider.jpg'  // Ruta de la imagen del miembro
+        name: 'Roider Millares',
+        role: 'Desarrollador Backend',
+        image: 'assets/images/roider.jpg'
     },
     {
-      name: 'carlos Rivera',
-      role: 'Desarrollador Frontend',
-      image: 'assets/images/jonathan.jpg'  // Ruta de la imagen del miembro
+        name: 'Carlos Rivera',
+        role: 'Desarrollador Frontend',
+        image: 'assets/images/carlos.jpg'
     },
     {
-      name: 'Rodrigo Ledezma',
-      role: 'Especialista en Marketing Digital',
-      image: 'assets/images/jaime.jpg'  // Ruta de la imagen del miembro
+        name: 'Rodrigo Ledezma',
+        role: 'Especialista en Marketing Digital',
+        image: 'assets/images/rodrigo.jpg'
+    },
+    {
+        name: 'Camila Gutiérrez',
+        role: 'Diseñadora Gráfica',
+        image: 'assets/images/camila.jpg'
+    },
+    {
+        name: 'Moisés Moreno',
+        role: 'Analista de Datos',
+        image: 'assets/images/moises.jpg'
+    },
+    {
+        name: 'María Esther Vargas',
+        role: 'Especialista en Contenido',
+        image: 'assets/images/maria.jpg'
+    },
+    {
+        name: 'Eduardo Crespo',
+        role: 'Ingeniero de Software',
+        image: 'assets/images/eduardo.jpg'
     }
-  ];
+];
 
   constructor() { }
 

@@ -1,1 +1,68 @@
-<p>contacto works!</p>
+<app-header></app-header>
+
+<section id="contacto" class="relative py-20 bg-gradient-to-br from-[#eaf3fb] to-[#f8f9fa] text-[#002b55]">
+  <!-- Fondo decorativo -->
+  <div class="absolute inset-0 bg-contact-pattern opacity-10"></div>
+
+  <div class="container mx-auto px-6 relative z-10">
+    <!-- Título principal -->
+    <div class="text-center mb-12">
+      <h2 class="text-5xl font-extrabold mb-4 animate__animated animate__fadeInDown">
+        ¡Conéctate con Nosotros!
+      </h2>
+      <p class="text-lg font-light animate__animated animate__fadeIn animate__delay-1s">
+        Cuéntanos sobre tus ideas o proyectos. Estamos aquí para ayudarte a dar el siguiente paso.
+      </p>
+    </div>
+
+    <!-- Formulario de contacto -->
+    <div class="flex flex-col lg:flex-row lg:items-center lg:justify-center gap-10">
+      <!-- Ilustración decorativa -->
+      <div class="hidden lg:block w-1/2">
+        <img src="https://www.code-brew.com/wp-content/uploads/2021/08/vector-smart.png" alt="Conexión creativa" class="rounded-2xl  transform hover:scale-105 transition duration-300">
+      </div>
+
+      <!-- Formulario -->
+      <form class="bg-white p-10 rounded-lg shadow-2xl lg:w-1/2 space-y-6 transform hover:shadow-3xl transition duration-300">
+        <div class="flex flex-col">
+          <label for="name" class="text-lg font-medium">Nombre Completo</label>
+          <input
+            type="text"
+            id="name"
+            class="mt-2 p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#ff7e1a] focus:border-transparent"
+            placeholder="Escribe tu nombre"
+          />
+        </div>
+
+        <div class="flex flex-col">
+          <label for="email" class="text-lg font-medium">Correo Electrónico</label>
+          <input
+            type="email"
+            id="email"
+            class="mt-2 p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#ff7e1a] focus:border-transparent"
+            placeholder="tu@email.com"
+          />
+        </div>
+
+        <div class="flex flex-col">
+          <label for="message" class="text-lg font-medium">Mensaje</label>
+          <textarea
+            id="message"
+            rows="4"
+            class="mt-2 p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#ff7e1a] focus:border-transparent"
+            placeholder="Escribe tu mensaje aquí..."
+          ></textarea>
+        </div>
+
+        <button
+          type="submit"
+          class="w-full bg-[#ff7e1a] text-white py-3 px-6 rounded-lg text-xl font-semibold hover:bg-[#e86c15] transition duration-300"
+        >
+          Enviar Mensaje
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<app-footer></app-footer>
