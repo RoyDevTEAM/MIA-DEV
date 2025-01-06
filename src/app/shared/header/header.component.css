@@ -1,0 +1,35 @@
+:root {
+    --color-primary: #002b55; /* Azul Oscuro */
+    --color-secondary: #ff7e1a; /* Naranja */
+    --color-accent: #577c4e; /* Verde */
+  }
+  
+  /* Tailwind clases personalizadas */
+  .bg-primary {
+    background-color: #1e3a8a;
+  }
+  
+  .bg-secondary {
+    background-color: #2563eb;
+  }
+  
+  .text-accent {
+    color: #fbbf24;
+  }
+  
+  /* Animaciones */
+  @keyframes slide-in {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .animate-slide-in {
+    animation: slide-in 0.3s ease-out forwards;
+  }
+  

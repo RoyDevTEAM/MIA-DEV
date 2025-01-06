@@ -1,0 +1,50 @@
+/* Asegúrate de que el contenido comience invisble */
+.fade-right, .fade-left {
+    opacity: 0;
+    transform: translateX(50px); /* Para la animación de entrada desde la derecha */
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+  
+  /* Cuando el elemento entra en la vista, la clase 'visible' se aplica */
+  .fade-right.visible {
+    opacity: 1;
+    transform: translateX(0); /* Finaliza en su posición original */
+  }
+  
+  .fade-left.visible {
+    opacity: 1;
+    transform: translateX(0); /* Finaliza en su posición original */
+  }
+  
+  .fade-right {
+    animation: fadeInRight 1s forwards;
+  }
+  
+  .fade-left {
+    animation: fadeInLeft 1s forwards;
+  }
+  
+  /* Animación para que entre desde la derecha */
+  @keyframes fadeInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Animación para que entre desde la izquierda */
+  @keyframes fadeInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
