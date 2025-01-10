@@ -336,100 +336,44 @@
       </div>
     </div>
   </section>
-  <section class="py-12 bg-gray-100">
-    <div class="container mx-auto px-4 lg:px-8">
-      <h2 class="text-3xl font-bold text-center mb-6">Contáctanos</h2>
-      <p class="text-center text-gray-600 mb-8">
-        ¿Tienes preguntas o necesitas más información? ¡Escríbenos!
-      </p>
-      <form
-        [formGroup]="contactForm"
-        (ngSubmit)="onSubmit()"
-        class="max-w-xl mx-auto bg-white p-6 rounded-lg shadow-md"
-      >
+  <section id="contacto" class="py-40 bg-[#002b55] text-white">
+    <div class="container mx-auto text-center px-4">
+      <h2 class="text-4xl lg:text-5xl font-bold mb-12">Contáctanos</h2>
+      <p class="text-xl mb-6">¿Tienes alguna consulta o quieres más información sobre nuestros servicios? ¡Estamos aquí para ayudarte!</p>
+  
+      <!-- Formulario de contacto -->
+      <form action="/submit-form" method="POST" class="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-lg space-y-6">
         <!-- Nombre -->
-        <div class="mb-4">
-          <label
-            for="name"
-            class="block text-sm font-medium text-gray-700"
-            >Nombre:</label
-          >
-          <input
-            id="name"
-            type="text"
-            formControlName="name"
-            class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
-            [ngClass]="{
-              'border-red-500': contactForm.controls['name'].invalid && contactForm.controls['name'].touched
-            }"
-          />
-          <small
-            *ngIf="contactForm.controls['name'].invalid && contactForm.controls['name'].touched"
-            class="text-red-500 text-xs"
-          >
-            El nombre debe tener al menos 3 caracteres.
-          </small>
+        <div class="flex flex-col md:flex-row md:space-x-4">
+          <div class="flex-1">
+            <label for="name" class="text-[#2563EB] text-lg font-semibold">Nombre</label>
+            <input type="text" id="name" name="name" placeholder="Tu nombre" class="w-full p-4 mt-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#2563EB]" required>
+          </div>
+          <div class="flex-1">
+            <label for="email" class="text-[#2563EB] text-lg font-semibold">Correo Electrónico</label>
+            <input type="email" id="email" name="email" placeholder="Tu correo electrónico" class="w-full p-4 mt-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#2563EB]" required>
+          </div>
         </div>
   
-        <!-- Email -->
-        <div class="mb-4">
-          <label
-            for="email"
-            class="block text-sm font-medium text-gray-700"
-            >Email:</label
-          >
-          <input
-            id="email"
-            type="email"
-            formControlName="email"
-            class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
-            [ngClass]="{
-              'border-red-500': contactForm.controls['email'].invalid && contactForm.controls['email'].touched
-            }"
-          />
-          <small
-            *ngIf="contactForm.controls['email'].invalid && contactForm.controls['email'].touched"
-            class="text-red-500 text-xs"
-          >
-            Por favor ingresa un email válido.
-          </small>
+        <!-- Teléfono -->
+        <div>
+          <label for="phone" class="text-[#2563EB] text-lg font-semibold">Teléfono (opcional)</label>
+          <input type="text" id="phone" name="phone" placeholder="Tu teléfono" class="w-full p-4 mt-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#2563EB]">
         </div>
   
         <!-- Mensaje -->
-        <div class="mb-4">
-          <label
-            for="message"
-            class="block text-sm font-medium text-gray-700"
-            >Mensaje:</label
-          >
-          <textarea
-            id="message"
-            formControlName="message"
-            rows="4"
-            class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
-            [ngClass]="{
-              'border-red-500': contactForm.controls['message'].invalid && contactForm.controls['message'].touched
-            }"
-          ></textarea>
-          <small
-            *ngIf="contactForm.controls['message'].invalid && contactForm.controls['message'].touched"
-            class="text-red-500 text-xs"
-          >
-            El mensaje debe tener al menos 10 caracteres.
-          </small>
+        <div>
+          <label for="message" class="text-[#2563EB] text-lg font-semibold">Mensaje</label>
+          <textarea id="message" name="message" rows="6" placeholder="Escribe tu mensaje aquí..." class="w-full p-4 mt-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#2563EB]" required></textarea>
         </div>
   
-        <!-- Botón de Enviar -->
+        <!-- Botón de envío -->
         <div class="text-center">
-          <button
-            type="submit"
-            class="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg transition-all duration-300"
-          >
-            Enviar
-          </button>
+          <button type="submit" class="bg-[#FFD700] text-[#1E3A8A] text-lg font-semibold py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition-all">Enviar Mensaje</button>
         </div>
       </form>
     </div>
   </section>
+  
     
   <app-footer></app-footer>
