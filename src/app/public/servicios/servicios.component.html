@@ -5,11 +5,12 @@
       <p class="text-lg sm:text-xl mb-8 animate__animated animate__fadeInUp animate__delay-2s">
         Soluciones innovadoras diseñadas para elevar tu presencia digital y conectar con tu audiencia.
       </p>
-      <a href="#services1">
+      <a routerLink="/servicios" fragment="services1">
         <button style="background-color: #ff7e1a;" class="text-white px-6 py-3 rounded-full font-semibold shadow hover:bg-opacity-90 transition animate__animated animate__zoomIn animate__delay-3s">
           Ver Servicios
         </button>
       </a>
+      
     </div>
   </section>
   
@@ -87,138 +88,121 @@
       </div>
     </div>
   </section>
+
+
   <section id="planes" class="py-40 bg-gradient-to-r from-[#4B8BF5] to-[#2563EB] text-white text-center">
     <h2 class="text-4xl lg:text-5xl font-bold mb-12">Elige el Plan Perfecto Para Ti</h2>
-  
-    <div class="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 px-4">
-      <!-- Plan Básico -->
-      <div class="relative z-10 bg-[#1E3A8A] rounded-2xl shadow-xl transform hover:scale-105 transition-all p-8">
-        <h3 class="text-3xl font-semibold mb-4">Plan Básico</h3>
-        <p class="text-xl mb-6">Ideal para pequeños negocios que empiezan su camino digital.</p>
-        <div class="space-y-4">
-          <div><strong>Publicidad y Marketing Digital:</strong> Negocios Pequeños</div>
-          <div><strong>SEO y Posicionamiento:</strong> SEO básico, optimización de textos clave</div>
-          <div><strong>Email Marketing:</strong> Campañas básicas con 2 envíos/mes</div>
-          <div><strong>Desarrollo Web:</strong> Landing Pages Pequeñas</div>
-          <div><strong>E-Commerce:</strong> 5 productos, pagos básicos</div>
-          <div><strong>Mantenimiento Web:</strong> Actualización básica y plugins</div>
+    
+    <!-- Sección de Desarrollo Web -->
+    <div class="mb-16">
+      <h3 class="text-3xl font-semibold text-[#FFD700] mb-6">Desarrollo Web</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 px-4">
+        <!-- Plan Básico -->
+        <div class="relative z-10 bg-[#1E3A8A] rounded-2xl shadow-xl transform hover:scale-105 transition-all p-8">
+          <h3 class="text-3xl font-semibold mb-4">Plan Básico</h3>
+          <p class="text-xl mb-6">Ideal para pequeños negocios que empiezan su camino digital.</p>
+          <div class="space-y-4">
+            <div><strong>Desarrollo Web:</strong> Landing Pages Pequeñas</div>
+          </div>
+          <div class="mt-6 text-2xl font-bold">Bs. 700</div>
+          <a href="#contacto" class="mt-6 inline-block bg-[#FFD700] text-[#1E3A8A] py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition-all">¡Empezar Ahora!</a>
         </div>
-        <div class="mt-6 text-2xl font-bold">Bs. 700</div>
-        <a href="#contacto" class="mt-6 inline-block bg-[#FFD700] text-[#1E3A8A] py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition-all">¡Empezar Ahora!</a>
-      </div>
   
-      <!-- Plan Intermedio -->
-      <div class="relative z-10 bg-[#2563EB] rounded-2xl shadow-xl transform hover:scale-105 transition-all p-8">
-        <h3 class="text-3xl font-semibold mb-4">Plan Intermedio</h3>
-        <p class="text-xl mb-6">Perfecto para negocios en crecimiento que necesitan más visibilidad.</p>
-        <div class="space-y-4">
-          <div><strong>Publicidad y Marketing Digital:</strong> Negocios Medianos</div>
-          <div><strong>SEO y Posicionamiento:</strong> SEO avanzado, auditoría de palabras clave</div>
-          <div><strong>Email Marketing:</strong> Segmentación y diseño avanzado</div>
-          <div><strong>Desarrollo Web:</strong> Página con 3 secciones, animaciones simples</div>
-          <div><strong>E-Commerce:</strong> Hasta 50 productos, diseño profesional</div>
-          <div><strong>Mantenimiento Web:</strong> Mejoras de diseño, SEO básico</div>
+        <!-- Plan Intermedio -->
+        <div class="relative z-10 bg-[#2563EB] rounded-2xl shadow-xl transform hover:scale-105 transition-all p-8">
+          <h3 class="text-3xl font-semibold mb-4">Plan Intermedio</h3>
+          <p class="text-xl mb-6">Perfecto para negocios en crecimiento que necesitan más visibilidad.</p>
+          <div class="space-y-4">
+            <div><strong>Desarrollo Web:</strong> Página con 3 secciones, animaciones simples</div>
+          </div>
+          <div class="mt-6 text-2xl font-bold">Bs. 1,200</div>
+          <a href="#contacto" class="mt-6 inline-block bg-[#FFD700] text-[#2563EB] py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition-all">¡Potenciar Mi Negocio!</a>
         </div>
-        <div class="mt-6 text-2xl font-bold">Bs. 1,200</div>
-        <a href="#contacto" class="mt-6 inline-block bg-[#FFD700] text-[#2563EB] py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition-all">¡Potenciar Mi Negocio!</a>
-      </div>
   
-      <!-- Plan Avanzado -->
-      <div class="relative z-10 bg-[#9333EA] rounded-2xl shadow-xl transform hover:scale-105 transition-all p-8">
-        <h3 class="text-3xl font-semibold mb-4">Plan Avanzado</h3>
-        <p class="text-xl mb-6">Para empresas que buscan expandirse con estrategias personalizadas.</p>
-        <div class="space-y-4">
-          <div><strong>Publicidad y Marketing Digital:</strong> Negocios Grandes</div>
-          <div><strong>SEO y Posicionamiento:</strong> Estrategias de link-building, análisis profundo</div>
-          <div><strong>Email Marketing:</strong> Automatización de flujos avanzados</div>
-          <div><strong>Desarrollo Web:</strong> Página con múltiples secciones, diseño premium</div>
-          <div><strong>E-Commerce:</strong> 100 productos, reportes, diseño avanzado</div>
-          <div><strong>Mantenimiento Web:</strong> Monitoreo continuo, soporte avanzado</div>
+        <!-- Plan Avanzado -->
+        <div class="relative z-10 bg-[#9333EA] rounded-2xl shadow-xl transform hover:scale-105 transition-all p-8">
+          <h3 class="text-3xl font-semibold mb-4">Plan Avanzado</h3>
+          <p class="text-xl mb-6">Para empresas que buscan expandirse con estrategias personalizadas.</p>
+          <div class="space-y-4">
+            <div><strong>Desarrollo Web:</strong> Página con múltiples secciones, diseño premium</div>
+          </div>
+          <div class="mt-6 text-2xl font-bold">Bs. 2,500</div>
+          <a href="#contacto" class="mt-6 inline-block bg-[#FFD700] text-[#9333EA] py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition-all">¡Quiero Crecer!</a>
         </div>
-        <div class="mt-6 text-2xl font-bold">Bs. 2,500</div>
-        <a href="#contacto" class="mt-6 inline-block bg-[#FFD700] text-[#9333EA] py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition-all">¡Quiero Crecer!</a>
-      </div>
   
-      <!-- Plan Premium -->
-      <div class="relative z-10 bg-[#FF6F61] rounded-2xl shadow-xl transform hover:scale-105 transition-all p-8">
-        <h3 class="text-3xl font-semibold mb-4">Plan Premium</h3>
-        <p class="text-xl mb-6">El paquete más completo para empresas con grandes expectativas.</p>
-        <div class="space-y-4">
-          <div><strong>Publicidad y Marketing Digital:</strong> Negocios Grandes Plus</div>
-          <div><strong>SEO y Posicionamiento:</strong> Plan integral de SEO internacional</div>
-          <div><strong>Email Marketing:</strong> Campañas personalizadas a gran escala</div>
-          <div><strong>Desarrollo Web:</strong> Plataformas a Medida</div>
-          <div><strong>E-Commerce:</strong> Tienda ilimitada, funcionalidades personalizadas</div>
-          <div><strong>Mantenimiento Web:</strong> Mantenimiento integral, soporte ilimitado</div>
+        <!-- Plan Premium -->
+        <div class="relative z-10 bg-[#FF6F61] rounded-2xl shadow-xl transform hover:scale-105 transition-all p-8">
+          <h3 class="text-3xl font-semibold mb-4">Plan Premium</h3>
+          <p class="text-xl mb-6">El paquete más completo para empresas con grandes expectativas.</p>
+          <div class="space-y-4">
+            <div><strong>Desarrollo Web:</strong> Plataformas a Medida</div>
+          </div>
+          <div class="mt-6 text-2xl font-bold">Bs. 3,500</div>
+          <a href="#contacto" class="mt-6 inline-block bg-[#FFD700] text-[#FF6F61] py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition-all">¡Lo Quiero Todo!</a>
         </div>
-        <div class="mt-6 text-2xl font-bold">Bs. 3,500</div>
-        <a href="#contacto" class="mt-6 inline-block bg-[#ff7e1a] text-[#FF6F61] py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition-all">¡Lo Quiero Todo!</a>
       </div>
     </div>
   
-    <!-- Justificación de la compra -->
+    <!-- Sección de Publicidad y Marketing Digital -->
+    <div class="mb-16">
+      <h3 class="text-3xl font-semibold text-[#FFD700] mb-6">Publicidad y Marketing Digital</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 px-4">
+        <!-- Plan Básico -->
+        <div class="relative z-10 bg-[#1E3A8A] rounded-2xl shadow-xl transform hover:scale-105 transition-all p-8">
+          <h3 class="text-3xl font-semibold mb-4">Plan Básico</h3>
+          <p class="text-xl mb-6">Ideal para pequeños negocios que empiezan su camino digital.</p>
+          <div class="space-y-4">
+            <div><strong>Publicidad y Marketing Digital:</strong> Negocios Pequeños</div>
+          </div>
+          <div class="mt-6 text-2xl font-bold">Bs. 700</div>
+          <a href="#contacto" class="mt-6 inline-block bg-[#FFD700] text-[#1E3A8A] py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition-all">¡Empezar Ahora!</a>
+        </div>
+  
+        <!-- Plan Intermedio -->
+        <div class="relative z-10 bg-[#2563EB] rounded-2xl shadow-xl transform hover:scale-105 transition-all p-8">
+          <h3 class="text-3xl font-semibold mb-4">Plan Intermedio</h3>
+          <p class="text-xl mb-6">Perfecto para negocios en crecimiento que necesitan más visibilidad.</p>
+          <div class="space-y-4">
+            <div><strong>Publicidad y Marketing Digital:</strong> Negocios Medianos</div>
+          </div>
+          <div class="mt-6 text-2xl font-bold">Bs. 1,200</div>
+          <a href="#contacto" class="mt-6 inline-block bg-[#FFD700] text-[#2563EB] py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition-all">¡Potenciar Mi Negocio!</a>
+        </div>
+  
+        <!-- Plan Avanzado -->
+        <div class="relative z-10 bg-[#9333EA] rounded-2xl shadow-xl transform hover:scale-105 transition-all p-8">
+          <h3 class="text-3xl font-semibold mb-4">Plan Avanzado</h3>
+          <p class="text-xl mb-6">Para empresas que buscan expandirse con estrategias personalizadas.</p>
+          <div class="space-y-4">
+            <div><strong>Publicidad y Marketing Digital:</strong> Negocios Grandes</div>
+          </div>
+          <div class="mt-6 text-2xl font-bold">Bs. 2,500</div>
+          <a href="#contacto" class="mt-6 inline-block bg-[#FFD700] text-[#9333EA] py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition-all">¡Quiero Crecer!</a>
+        </div>
+  
+        <!-- Plan Premium -->
+        <div class="relative z-10 bg-[#FF6F61] rounded-2xl shadow-xl transform hover:scale-105 transition-all p-8">
+          <h3 class="text-3xl font-semibold mb-4">Plan Premium</h3>
+          <p class="text-xl mb-6">El paquete más completo para empresas con grandes expectativas.</p>
+          <div class="space-y-4">
+            <div><strong>Publicidad y Marketing Digital:</strong> Negocios Grandes Plus</div>
+          </div>
+          <div class="mt-6 text-2xl font-bold">Bs. 3,500</div>
+          <a href="#contacto" class="mt-6 inline-block bg-[#FFD700] text-[#FF6F61] py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition-all">¡Lo Quiero Todo!</a>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Llamado a la acción para contactar -->
     <div class="mt-20 bg-[#4B8BF5] py-12 px-6 text-white text-center rounded-2xl shadow-xl">
       <h2 class="text-3xl font-semibold mb-6">¿Por Qué Elegir Nuestro Paquete?</h2>
       <p class="text-xl mb-8">Cada plan está diseñado para llevar tu negocio al siguiente nivel. Dependiendo de tus necesidades, te ayudamos a incrementar tu visibilidad, optimizar tus procesos digitales y alcanzar a más clientes con soluciones personalizadas.</p>
       <p class="text-lg">Con nuestros planes, tendrás acceso a un soporte continuo, estrategias de marketing digital avanzadas y herramientas innovadoras que potenciarán tu presencia online.</p>
-      <a href="#contacto" class="mt-6 inline-block bg-[#ff7e1a] text-[#4B8BF5] py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition-all">¡Haz Crecer Tu Negocio!</a>
+      <a href="#contacto" class="mt-6 inline-block bg-[#FFD700] text-[#4B8BF5] py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition-all">¡Haz Crecer Tu Negocio!</a>
     </div>
   </section>
+
   
-  <section id="casos-de-exito" class="py-40 bg-[#F3F4F6] relative">
-    <div class="container mx-auto text-center px-4">
-      <h2 class="text-4xl font-bold text-[#002b55] mb-10">Casos de Éxito</h2>
-      <p class="text-lg text-gray-600 mb-16">Descubre cómo hemos transformado negocios y ayudado a nuestros clientes a alcanzar nuevas alturas.</p>
-  
-      <!-- Contenedor de los casos de éxito -->
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-        <!-- Caso 1 -->
-        <div class="relative group overflow-hidden rounded-xl">
-          <div class="h-[400px] bg-cover bg-center transition-transform duration-500 group-hover:scale-110" style="background-image: url('https://www.juanmerodio.com/wp-content/uploads/2021/12/consultor-marketing-digital-800x408.jpeg');"></div>
-          <div class="absolute top-0 left-0 right-0 bottom-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-75 group-hover:opacity-50 transition-opacity duration-500"></div>
-          <div class="absolute bottom-10 left-0 right-0 px-6 py-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-            <h3 class="text-3xl font-semibold mb-2">Transformación Digital para Empresa A</h3>
-            <p class="text-xl">Implementamos soluciones digitales que optimizaron los procesos internos y mejoraron la interacción con los clientes.</p>
-          </div>
-        </div>
-  
-        <!-- Caso 2 -->
-        <div class="relative group overflow-hidden rounded-xl">
-          <div class="h-[400px] bg-cover bg-center transition-transform duration-500 group-hover:scale-110" style="background-image: url('https://www.juanmerodio.com/wp-content/uploads/2021/12/consultor-marketing-digital-800x408.jpeg');"></div>
-          <div class="absolute top-0 left-0 right-0 bottom-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-75 group-hover:opacity-50 transition-opacity duration-500"></div>
-          <div class="absolute bottom-10 left-0 right-0 px-6 py-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-            <h3 class="text-3xl font-semibold mb-2">Estrategia de Marketing para Empresa B</h3>
-            <p class="text-xl">Creamos una campaña de marketing digital que duplicó su tráfico web y aumentó las conversiones en un 40%.</p>
-          </div>
-        </div>
-  
-        <!-- Caso 3 -->
-        <div class="relative group overflow-hidden rounded-xl">
-          <div class="h-[400px] bg-cover bg-center transition-transform duration-500 group-hover:scale-110" style="background-image: url('https://www.juanmerodio.com/wp-content/uploads/2021/12/consultor-marketing-digital-800x408.jpeg');"></div>
-          <div class="absolute top-0 left-0 right-0 bottom-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-75 group-hover:opacity-50 transition-opacity duration-500"></div>
-          <div class="absolute bottom-10 left-0 right-0 px-6 py-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-            <h3 class="text-3xl font-semibold mb-2">Desarrollo de App para Empresa C</h3>
-            <p class="text-xl">Desarrollamos una aplicación móvil que permitió a la empresa mejorar su atención al cliente y procesar pedidos de forma eficiente.</p>
-          </div>
-        </div>
-  
-        <!-- Caso 4 -->
-        <div class="relative group overflow-hidden rounded-xl">
-          <div class="h-[400px] bg-cover bg-center transition-transform duration-500 group-hover:scale-110" style="background-image: url('https://www.juanmerodio.com/wp-content/uploads/2021/12/consultor-marketing-digital-800x408.jpeg');"></div>
-          <div class="absolute top-0 left-0 right-0 bottom-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-75 group-hover:opacity-50 transition-opacity duration-500"></div>
-          <div class="absolute bottom-10 left-0 right-0 px-6 py-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-            <h3 class="text-3xl font-semibold mb-2">Optimización de Plataforma para Empresa D</h3>
-            <p class="text-xl">Realizamos una auditoría profunda de su plataforma, lo que resultó en una mejora significativa en el rendimiento y experiencia del usuario.</p>
-          </div>
-        </div>
-      </div>
-  
-      <!-- Llamado a la acción -->
-      <div class="mt-16 text-center">
-        <a href="/contacto" class="bg-[#2563EB] text-white text-2xl font-semibold py-3 px-8 rounded-lg hover:bg-[#1E40AF] transition-colors">¡Contáctanos!</a>
-      </div>
-    </div>
-  </section>
   <section id="cta" class="relative bg-[#002b55] py-40 text-white text-center">
     <!-- Fondo dinámico con animación -->
     <div class="absolute top-0 left-0 w-full h-full bg-cover bg-center opacity-50" style="background-image: url('fondo-cta.jpg');"></div>

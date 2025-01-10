@@ -10,7 +10,11 @@ import { ServiciosComponent } from './public/servicios/servicios.component';
 import { ContactoComponent } from './public/contacto/contacto.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { HeaderComponent } from './shared/header/header.component';
-
+import { ExtraOptions } from '@angular/router';
+const routerOptions: ExtraOptions = {
+  anchorScrolling: "enabled",
+  scrollPositionRestoration: 'enabled'
+}
 @NgModule({
   declarations: [
     AppComponent,
