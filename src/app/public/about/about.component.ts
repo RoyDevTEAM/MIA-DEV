@@ -34,6 +34,11 @@ export class AboutComponent implements OnInit {
         image: 'assets/images/moises.jpg'
     },
     {
+        name: 'Elias Campos Justiniano',
+        role: 'Desarrollador Fullstack',
+        image: 'assets/images/maria.jpg'
+    },
+    {
         name: 'María Esther Vargas',
         role: 'Especialista en Contenido',
         image: 'assets/images/maria.jpg'
