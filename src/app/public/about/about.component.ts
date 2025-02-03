@@ -10,17 +10,23 @@ export class AboutComponent implements OnInit {
   teamMembers = [
     {
         name: 'Roider Millares',
-        role: 'Desarrollador Backend',
+        role: 'Desarrollador Fullstack',
         image: 'assets/images/roider.jpg'
+    }
+    ,
+    {
+        name: 'Noelia Cuellar Chung',
+        role: 'Desarrollador Fullstack',
+        image: 'assets/images/carlos.jpg'
     },
     {
         name: 'Carlos Rivera',
-        role: 'Desarrollador Frontend',
+        role: 'Marketing y Publicidad Digital',
         image: 'assets/images/carlos.jpg'
     },
     {
         name: 'Rodrigo Ledezma',
-        role: 'Especialista en Marketing Digital',
+        role: 'Desarrollador Movil',
         image: 'assets/images/rodrigo.jpg'
     },
     {
@@ -45,9 +51,34 @@ export class AboutComponent implements OnInit {
     },
     {
         name: 'Eduardo Crespo',
-        role: 'Ingeniero de Software',
+        role: 'Edicion AudioVisual',
         image: 'assets/images/eduardo.jpg'
     }
+    ,
+    {
+        name: 'Jesica Salvatierra',
+        role: 'Edicion AudioVisual',
+        image: 'assets/images/eduardo.jpg'
+    }
+    ,
+    {
+        name: 'Brisa Ortiz',
+        role: 'Especialista en Contenido',
+        image: 'assets/images/eduardo.jpg'
+    }
+    ,
+    {
+        name: 'Milan Arandia',
+        role: 'Edicion AudioVisual',
+        image: 'assets/images/eduardo.jpg'
+    }
+    ,
+    {
+        name: 'Yiseel Capiona',
+        role: 'Especialista en Contenido',
+        image: 'assets/images/eduardo.jpg'
+    }
+    
 ];
 
   constructor() { }
