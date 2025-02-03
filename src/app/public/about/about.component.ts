@@ -11,13 +11,13 @@ export class AboutComponent implements OnInit {
     {
         name: 'Roider Millares',
         role: 'Desarrollador Fullstack',
-        image: 'assets/images/roider.jpg'
+        image: 'assets/img/roy.jpg'
     }
     ,
     {
         name: 'Noelia Cuellar Chung',
         role: 'Desarrollador Fullstack',
-        image: 'assets/images/carlos.jpg'
+        image: 'assets/img/noelia.jpg'
     },
     {
         name: 'Carlos Rivera',
@@ -27,17 +27,17 @@ export class AboutComponent implements OnInit {
     {
         name: 'Rodrigo Ledezma',
         role: 'Desarrollador Movil',
-        image: 'assets/images/rodrigo.jpg'
+        image: 'assets/img/rodrigo.jpg'
     },
     {
         name: 'Camila Gutiérrez',
         role: 'Diseñadora Gráfica',
-        image: 'assets/images/camila.jpg'
+        image: 'assets/img/camila.jpg'
     },
     {
         name: 'Moisés Moreno',
         role: 'Analista de Datos',
-        image: 'assets/images/moises.jpg'
+        image: 'assets/img/moises.jpg'
     },
     {
         name: 'Elias Campos Justiniano',
@@ -46,7 +46,7 @@ export class AboutComponent implements OnInit {
     },
     {
         name: 'María Esther Vargas',
-        role: 'Especialista en Contenido',
+        role: 'Desarollo avanzado en python',
         image: 'assets/images/maria.jpg'
     },
     {
@@ -58,25 +58,25 @@ export class AboutComponent implements OnInit {
     {
         name: 'Jesica Salvatierra',
         role: 'Edicion AudioVisual',
-        image: 'assets/images/eduardo.jpg'
+        image: 'assets/img/jessi.jpg'
     }
     ,
     {
         name: 'Brisa Ortiz',
         role: 'Especialista en Contenido',
-        image: 'assets/images/eduardo.jpg'
+        image: 'assets/img/brisa.jpg'
     }
     ,
     {
         name: 'Milan Arandia',
         role: 'Edicion AudioVisual',
-        image: 'assets/images/eduardo.jpg'
+        image: 'assets/img/milan.jpg'
     }
     ,
     {
         name: 'Yiseel Capiona',
         role: 'Especialista en Contenido',
-        image: 'assets/images/eduardo.jpg'
+        image: 'assets/img/yiseel.jpg'
     }
     
 ];
