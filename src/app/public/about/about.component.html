@@ -128,47 +128,34 @@
         </p>
       </div>
     </div>
-
-    <!-- Valores -->
-    <div class="relative mt-16 bg-[#ffffff] p-10 rounded-lg shadow-xl">
-      <div class="absolute inset-0 bg-gradient-to-r from-[#ff7e1a] via-[#ffd6a5] to-[#ffffff] opacity-5 rounded-lg -z-10"></div>
-      <h3 class="text-3xl font-semibold mb-6 text-center">Nuestros Valores</h3>
-      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-6">
-        <div class="flex items-center space-x-4">
-          <i class="fa fa-lightbulb text-[#ff7e1a] text-3xl"></i>
-          <p class="text-lg">Innovación</p>
-        </div>
-        <div class="flex items-center space-x-4">
-          <i class="fa fa-hands-helping text-[#ff7e1a] text-3xl"></i>
-          <p class="text-lg">Compromiso</p>
-        </div>
-        <div class="flex items-center space-x-4">
-          <i class="fa fa-users text-[#ff7e1a] text-3xl"></i>
-          <p class="text-lg">Trabajo en equipo</p>
-        </div>
-        <div class="flex items-center space-x-4">
-          <i class="fa fa-lock text-[#ff7e1a] text-3xl"></i>
-          <p class="text-lg">Transparencia</p>
-        </div>
-        <div class="flex items-center space-x-4">
-          <i class="fa fa-heart text-[#ff7e1a] text-3xl"></i>
-          <p class="text-lg">Pasión</p>
-        </div>
-        <div class="flex items-center space-x-4">
-          <i class="fa fa-star text-[#ff7e1a] text-3xl"></i>
-          <p class="text-lg">Excelencia</p>
-        </div>
-      </div>
-    </div>
-
     <!-- Botón de llamada a la acción -->
     <div class="mt-12 text-center">
-      <a href="#contacto" class="bg-[#ff7e1a] text-white py-3 px-8 rounded-full text-xl font-semibold hover:bg-[#e86c15] transition duration-300">
+      <a href="/contacto" class="bg-[#ff7e1a] text-white py-3 px-8 rounded-full text-xl font-semibold hover:bg-[#e86c15] transition duration-300">
         ¡Hablemos de tu proyecto!
       </a>
     </div>
   </div>
  </section>
+<!-- Sección de Valores -->
+<section class="py-16 bg-[#f8f9fa] text-[#002b55]">
+  <div class="container mx-auto px-6">
+    <h3 class="text-4xl font-bold text-center mb-12">
+      Nuestros Valores
+    </h3>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div 
+        *ngFor="let value of valores"
+        class="bg-white shadow-xl rounded-lg p-6 flex flex-col items-center text-center transition transform hover:scale-105"
+      >
+        <div class="w-20 h-20 flex items-center justify-center rounded-full bg-[#ff7e1a] text-white text-4xl mb-4">
+          <i [class]="value.icon"></i>
+        </div>
+        <h4 class="text-2xl font-semibold">{{ value.name }}</h4>
+      </div>
+    </div>
+  </div>
+</section>
 
  <section id="nuestro-equipo" class="py-16 bg-[#f8f9fa] text-[#002b55]">
   <div class="container mx-auto text-center">
@@ -216,7 +203,6 @@
   </div>
 </section>
 
-  
   <section id="nuestra-filosofia" class="bg-[#f8f9fa] py-20">
     <div class="container mx-auto px-6">
       <!-- Título de la sección -->

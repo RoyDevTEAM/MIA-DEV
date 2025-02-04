@@ -22,7 +22,7 @@ export class AboutComponent implements OnInit {
     {
         name: 'Carlos Rivera',
         role: 'Marketing y Publicidad Digital',
-        image: 'assets/images/carlos.jpg'
+        image: 'assets/img/carlos.jpg'
     },
     {
         name: 'Rodrigo Ledezma',
@@ -80,6 +80,15 @@ export class AboutComponent implements OnInit {
     }
     
 ];
+valores = [
+    { name: "Innovación", icon: "fa fa-lightbulb" },
+    { name: "Compromiso", icon: "fa fa-hands-helping" },
+    { name: "Trabajo en equipo", icon: "fa fa-users" },
+    { name: "Transparencia", icon: "fa fa-lock" },
+    { name: "Pasión", icon: "fa fa-heart" },
+    { name: "Excelencia", icon: "fa fa-star" }
+  ];
+  
 
   constructor() { }
 
