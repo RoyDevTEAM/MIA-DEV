@@ -12,7 +12,7 @@
       </p>
       <div class="flex gap-4 justify-center items-center">
         <a routerLink="/about" fragment="historia" class="bg-[#ff7e1a] text-white px-6 py-3 rounded hover:bg-orange-600 transition">
-          Descubre nuestra historia
+          Nuestra historia
         </a>
                <a href="/contacto" class="border border-[#ff7e1a] text-[#ff7e1a] px-6 py-3 rounded hover:bg-[#ff7e1a] hover:text-white transition">Contáctanos Ahora</a>
       </div>
@@ -50,7 +50,7 @@
                 <div class="mt-2">
                     <h3 class="text-2xl font-semibold">El Comienzo</h3>
                     <p class="text-lg mt-2">
-                        En 2015, un grupo de apasionados por la tecnología se unió para marcar la diferencia en el mundo digital en Bolivia.
+                      A finales del año 2025, un grupo de apasionados por la tecnología se unió para marcar la diferencia en el mundo digital en Bolivia.
                     </p>
                 </div>
             </div>
@@ -157,7 +157,7 @@
   </div>
 </section>
 
- <section id="nuestro-equipo" class="py-16 bg-[#f8f9fa] text-[#002b55]">
+ <section id="nuestro-equipo" class="py-10 bg-[#f8f9fa] text-[#002b55]">
   <div class="container mx-auto text-center">
       <!-- Título y descripción principal -->
       <h2 class="text-4xl font-bold mb-6 animate__animated animate__fadeIn">
@@ -167,39 +167,36 @@
           Un equipo diverso y talentoso enfocado en alcanzar el éxito juntos.
       </p>
 
-      <!-- Grid de miembros del equipo -->
-      <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
-          <!-- Repetidor de miembros -->
-          <div 
-              *ngFor="let member of teamMembers" 
-              class="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition duration-300 transform hover:scale-105 animate__animated animate__fadeIn"
-          >
-              <!-- Contenedor de la imagen con tamaño fijo -->
-              <div class="w-40 h-40 mx-auto mb-4 flex items-center justify-center overflow-hidden rounded-full border-4 border-[#ff7e1a]">
-                  <img 
-                      [src]="member.image" 
-                      [alt]="'Foto de ' + member.name" 
-                      class="w-full h-full object-cover"
-                  >
-              </div>
-
-              <h3 class="text-xl font-semibold mb-2">{{ member.name }}</h3>
-              <p class="text-sm mb-4">{{ member.role }}</p>
-
-              <!-- Redes sociales -->
-              <div class="flex justify-center space-x-4 text-[#ff7e1a]">
-                  <a href="#" [attr.aria-label]="'Perfil de ' + member.name + ' en Facebook'">
-                      <i class="fab fa-facebook text-2xl"></i>
-                  </a>
-                  <a href="#" [attr.aria-label]="'Perfil de ' + member.name + ' en Twitter'">
-                      <i class="fab fa-twitter text-2xl"></i>
-                  </a>
-                  <a href="#" [attr.aria-label]="'Perfil de ' + member.name + ' en LinkedIn'">
-                      <i class="fab fa-linkedin text-2xl"></i>
-                  </a>
-              </div>
+      <div class=" flex justify-center py-10">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div *ngFor="let member of teamMembers " class="relative bg-white-800 text-gray p-6 rounded-2xl shadow-xl team-card w-80 text-center">
+            
+            <div class="relative mx-auto w-32 aspect-square">
+              <img [src]="member.image" [alt]="member.name" class="w-full h-full object-contain rounded-50 border-4 border-[#ff7e1a] shadow-md bg-white-700">
+            </div>
+      
+            <h2 class="mt-4 text-xl font-bold">{{ member.name }}</h2>
+            <p class="text-indigo-400 text-sm font-medium">{{ member.role }}</p>
+            <p class="mt-2 text-gray-400 text-sm">Apasionado/a por la tecnología y la innovación.</p>
+      
+            <div class="mt-4 flex justify-center space-x-4">
+              <a href="#" class="text-[#ff7e1a] hover:text-[#e86c15] transition duration-300">
+                <i class="fab fa-facebook fa-lg"></i>
+              </a>
+              <a href="#" class="text-[#ff7e1a] hover:text-[#e86c15] transition duration-300">
+                <i class="fab fa-twitter fa-lg"></i>
+              </a>
+              <a href="#" class="text-[#ff7e1a] hover:text-[#e86c15] transition duration-300">
+                <i class="fab fa-linkedin fa-lg"></i>
+              </a>
+              <a href="#" class="text-[#ff7e1a] hover:text-[#e86c15] transition duration-300">
+                <i class="fab fa-github fa-lg"></i>
+              </a>
+            </div>
           </div>
+        </div>
       </div>
+      
   </div>
 </section>
 
@@ -234,11 +231,7 @@
       </div>
     </div>
   </section>
-  
-  
-  
 
-
-
+  
 
 <app-footer></app-footer>
